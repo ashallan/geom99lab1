@@ -20,20 +20,20 @@
           margin: 0;
           padding: 0;
         }
-      
-      <script>
-      
-      /* Template Source: https://github.com/googlemaps/js-samples/blob/main/samples/advanced-markers-basic-style/index.ts */
-      
-      /**
-       * @license
-       * Copyright 2019 Google LLC. All Rights Reserved.
-       * SPDX-License-Identifier: Apache-2.0
-       */
-      // [START maps_advanced_markers_basic_style]
-      const parser = new DOMParser();
 
-      function initMap() {
+      <script>
+        /* Template Source: https://github.com/googlemaps/js-samples/blob/main/samples/advanced-markers-basic-style/index.ts */
+
+        /**
+        * @license
+        * Copyright 2019 Google LLC. All Rights Reserved.
+        * SPDX-License-Identifier: Apache-2.0
+        */
+      
+        // [START maps_advanced_markers_basic_style]
+        const parser = new DOMParser();
+
+        function initMap() {
           const map = new google.maps.Map(document.getElementById('map') as HTMLElement, {
               center: { lat: 49.94778, lng: -97.09478 },
               zoom: 5,
@@ -110,19 +110,20 @@
               content: pinViewNoGlyph.element,
           });
           // [END maps_advanced_markers_basic_style_hide_glyph]
-
-      }
-
-      declare global {
-          interface Window {
-              initMap: () => void;
-          }
-      }
-
-      window.initMap = initMap;
-      // [END maps_advanced_markers_basic_style]
-      export { };
       
+        }
+      
+        declare global {
+          interface Window {
+            initMap: () => void;
+          
+          }
+        }
+      
+        window.initMap = initMap;
+        // [END maps_advanced_markers_basic_style]
+        export { };
+
     </style>
     <script>
       let map;
@@ -135,14 +136,11 @@
       }
     </script>
     
-    
-    
   </head>
   <body>
     <div id="map"></div>
     
     <!-- Async script executes immediately and must be after any DOM elements used in callback. -->
-    <!-- *** STUDENTS: Replace YOUR_API_KEY text with provided key in class for property src in next line *** -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDv3MGflguusDaLmV_-BUlmuoUI4EbM88w&callback=initMap&v=weekly" async>
     </script>
     
