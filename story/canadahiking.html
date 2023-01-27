@@ -33,11 +33,12 @@
       // [START maps_advanced_markers_basic_style]
       const parser = new DOMParser();
 
+      let map;
+
       function initMap() {
-        const map = new google.maps.Map(document.getElementById('map') as HTMLElement, {
+         map = new google.maps.Map(document.getElementById('map'), {
             center: { lat: 49.94778, lng: -97.09478 },
             zoom: 5,
-            mapId: '4504f8b37365c3d0',
         });
 
         // Each PinView is paired with a MarkerView to demonstrate setting each parameter.
