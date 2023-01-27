@@ -21,6 +21,15 @@
       }
     </style>
     <script>
+      let map;
+
+      function initMap() {
+        map = new google.maps.Map(document.getElementById("map"), {
+          center: { lat: 49.94778, lng: -97.09478 },
+          zoom: 5,
+        });
+      }
+      
       /* Template Source: https://github.com/googlemaps/js-samples/blob/main/samples/advanced-markers-basic-style/index.ts */
 
       /**
